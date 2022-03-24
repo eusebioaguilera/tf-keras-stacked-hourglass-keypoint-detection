@@ -108,7 +108,7 @@ def main(args):
 
     # start training
     print('Train on {} samples, val on {} samples, with batch size {}, model input shape {}.'.format(num_train, num_val, args.batch_size, args.model_input_shape))
-    model.fit_generator(generator=train_generator,
+    model.fit(train_generator,
                         steps_per_epoch=num_train // args.batch_size,
                         epochs=args.total_epoch,
                         initial_epoch=args.init_epoch,
