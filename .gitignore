@@ -1,2 +1,6 @@
 env/
 *.pyc
+logs/
+output/
+result/
+*.h5
